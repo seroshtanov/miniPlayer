@@ -1,0 +1,6 @@
+framework module Pods_MiniPlayer_Example {
+  umbrella header "Pods-MiniPlayer_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - MiniPlayer (0.1.0)
+
+DEPENDENCIES:
+  - MiniPlayer (from `../`)
+
+EXTERNAL SOURCES:
+  MiniPlayer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MiniPlayer: e803891fdd9db4ff63467faa7bc5b48f19063a9a
+
+PODFILE CHECKSUM: 503888479ff4bbba47a238c7c2be5bfb43c971ea
+
+COCOAPODS: 1.9.3

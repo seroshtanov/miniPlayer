@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MiniPlayer_Example' do
+  pod 'MiniPlayer', :path => '../'
+
+  target 'MiniPlayer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

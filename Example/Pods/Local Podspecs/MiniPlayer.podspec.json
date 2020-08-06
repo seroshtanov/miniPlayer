@@ -1,0 +1,22 @@
+{
+  "name": "MiniPlayer",
+  "version": "0.1.0",
+  "summary": "A short description of MiniPlayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/3422983@gmail.com/MiniPlayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "3422983@gmail.com": "3422983@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/3422983@gmail.com/MiniPlayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MiniPlayer/Classes/**/*"
+}

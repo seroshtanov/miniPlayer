@@ -1,0 +1,6 @@
+framework module MiniPlayer {
+  umbrella header "MiniPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}
