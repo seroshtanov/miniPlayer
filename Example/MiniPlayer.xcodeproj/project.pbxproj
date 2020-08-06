@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AF57C2224DC2EC100273FF3 /* file.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2AF57C2124DC2EC100273FF3 /* file.mp3 */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		10BD64E6FC02D5BE9A063EC4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1D580A42E965DCFB29457379 /* Pods-MiniPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniPlayer_Tests.release.xcconfig"; path = "Target Support Files/Pods-MiniPlayer_Tests/Pods-MiniPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2AF57C2124DC2EC100273FF3 /* file.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = file.mp3; sourceTree = "<group>"; };
 		34B8C9AB98639D48DBD30AF7 /* Pods_MiniPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4931BC35E39D30D736115F03 /* Pods-MiniPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniPlayer_Example.debug.xcconfig"; path = "Target Support Files/Pods-MiniPlayer_Example/Pods-MiniPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MiniPlayer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniPlayer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 		607FACD21AFB9204008FA782 /* Example for MiniPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				2AF57C2124DC2EC100273FF3 /* file.mp3 */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -248,6 +251,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				2AF57C2224DC2EC100273FF3 /* file.mp3 in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 
-protocol MiniPlayerDelegate : AnyObject {
+public protocol MiniPlayerDelegate : AnyObject {
     func didPlay(player: MiniPlayer)
     func didStop(player: MiniPlayer)
     func didPause(player: MiniPlayer)
@@ -28,7 +28,7 @@ protocol MiniPlayerDelegate : AnyObject {
         }
     }
     @IBInspectable public var timeLabelVisible : Bool = true
-    weak var delegate : MiniPlayerDelegate?
+    public weak var delegate : MiniPlayerDelegate?
     
     public var soundTrack :  AVPlayerItem? {
         didSet {

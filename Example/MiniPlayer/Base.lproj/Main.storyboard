@@ -39,6 +39,9 @@
                             <constraint firstItem="0Zv-dd-oO3" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" constant="15" id="lmg-wA-SXi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="miniPlayer" destination="0Zv-dd-oO3" id="ClB-Kd-Uip"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

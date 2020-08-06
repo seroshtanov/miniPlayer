@@ -7,18 +7,78 @@
 //
 
 import UIKit
+import MiniPlayer
+
+import AVKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var miniPlayer: MiniPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.miniPlayer.delegate = self
+        
+        self.miniPlayer.tintColor = UIColor.white
+        
+        /*
+        "timeLabelVisible" - set "false" if you want to hide timer. True by default
+        */
+        
+        self.miniPlayer.timeLabelVisible = true
+        
+        /*
+         "timerColor" - it's time color when player is stopped. TintColor by default
+        */
+
+        self.miniPlayer.timerColor = UIColor.black
+        
+        /*
+         "activeTimerColor" - it's time color when player is stopped. TintColor by default
+        */
+        
+        self.miniPlayer.activeTimerColor = UIColor.white
+        
+        /*
+         "activeTrackColor" - it's progress bar color. UIColor.yellow by default
+        */
+        
+        self.miniPlayer.activeTrackColor = UIColor.blue
+
+        /*
+        "durationTimeInSec" - it's start time (in seconds) when track will be started. 0 by default.
+         It'll reset when property "soundTrack" changes
+        */
+        
+        self.miniPlayer.durationTimeInSec = 0
+        
+        /*
+        Use code bottom to set playing track
+        */
+        
+        let urlPath = Bundle.main.path(forResource: "file", ofType: "mp3")
+        let url = URL.init(fileURLWithPath: urlPath!)
+
+        let song = AVPlayerItem(asset: AVAsset(url: url), automaticallyLoadedAssetKeys: ["playable"])
+        self.miniPlayer.soundTrack = song
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 
 }
 
+
+extension ViewController: MiniPlayerDelegate {
+    func didPlay(player: MiniPlayer) {
+        print("Playing...")
+    }
+    
+    func didStop(player: MiniPlayer) {
+        print("Stopped")
+    }
+    
+    func didPause(player: MiniPlayer) {
+        print("Pause")
+    }
+}
