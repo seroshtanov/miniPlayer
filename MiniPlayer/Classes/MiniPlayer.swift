@@ -75,7 +75,7 @@ public protocol MiniPlayerDelegate : AnyObject {
         let buttonFrame = CGRect.init(x: 0, y: 0, width: rect.size.height, height: rect.size.height)
         self.trackViewSetup(buttonFrame)
         self.playPauseButtonSetup(buttonFrame)
-        let timeLabelFrame = CGRect.init(x: rect.height + 4, y: 0, width: 32 , height: rect.height)
+        let timeLabelFrame = CGRect.init(x: rect.height + 4, y: 0, width: rect.width - ( (rect.height + 4) * 2) , height: rect.height)
         self.timeLabelSetup(frame: timeLabelFrame)
         self.addGestures()
         self.trackView.isUserInteractionEnabled = false
@@ -137,7 +137,14 @@ extension MiniPlayer {
             return UIImage.init(named: "play", in: bundle, compatibleWith: nil)!//Image.init(named: "play", in: Bun, with: nil)//UIImage.init(named: "play")
         }
     }
-    fileprivate var pauseButtonImage : UIImage? {UIImage.init(named: "pause")}
+    fileprivate var pauseButtonImage : UIImage {
+        let bundle = Bundle.init(for: MiniPlayer.self)
+        if #available(iOS 13.0, *) {
+            return UIImage.init(named: "pause", in: bundle, with: nil)!
+        } else {
+            return UIImage.init(named: "pause", in: bundle, compatibleWith: nil)!//Image.init(named: "play", in: Bun, with: nil)//UIImage.init(named: "play")
+        }
+    }
     
     fileprivate func updateButtonImage() {
         switch playerState {
@@ -177,6 +184,10 @@ extension MiniPlayer {
     
     fileprivate func updateTime(){
         func updateWithSec(_ insec: Int) {
+            guard insec > 0 else {
+                self.timeLabel?.text = "0:00"
+                return
+            }
             let min = insec / 60
             let sec = insec - (min * 60)
             let text = String(min) + ":" + (sec < 10 ? "0\(sec)" : String(sec))
@@ -248,9 +259,6 @@ extension MiniPlayer {
     }
     
     @objc fileprivate func gesture(sender: UIGestureRecognizer) {
-        guard self.playerState == .played else {
-            return
-        }
         let x = sender.location(in: self).x
         let newSise : CGFloat = min(self.frame.size.width, max(0, x))
         switch sender.state {

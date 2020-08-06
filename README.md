@@ -9,6 +9,15 @@
 
 Just put UIView in your xib or storyboard and change class name on "MiniPlayer" 
 
+### Set soundTrack property for using 
+
+### Use @IBInspectable properties to customise (see example directory)
+
+### For rule programmatically use :
+
+    <p>func play()<p/>
+    <p>func pause()<p/>
+    <p>func stop()<p/>
 
 ### Follow MiniPlayerDelegate:
 

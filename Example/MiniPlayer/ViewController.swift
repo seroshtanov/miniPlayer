@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         self.miniPlayer.delegate = self
         
         self.miniPlayer.tintColor = UIColor.white
+        self.miniPlayer.backgroundColor = UIColor.init(red: 204/255.0, green: 221/255.0, blue: 255/255.0, alpha: 1)
         
         /*
         "timeLabelVisible" - set "false" if you want to hide timer. True by default
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
          "timerColor" - it's time color when player is stopped. TintColor by default
         */
 
-        self.miniPlayer.timerColor = UIColor.black
+        self.miniPlayer.timerColor = UIColor.white
         
         /*
          "activeTimerColor" - it's time color when player is stopped. TintColor by default
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
          "activeTrackColor" - it's progress bar color. UIColor.yellow by default
         */
         
-        self.miniPlayer.activeTrackColor = UIColor.blue
+        self.miniPlayer.activeTrackColor = UIColor.init(red: 204/255.0, green: 170/255.0, blue: 255/255.0, alpha: 1)
 
         /*
         "durationTimeInSec" - it's start time (in seconds) when track will be started. 0 by default.
@@ -63,7 +64,6 @@ class ViewController: UIViewController {
         self.miniPlayer.soundTrack = song
         
     }
-
 
 
 }

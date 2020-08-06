@@ -20,10 +20,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Zv-dd-oO3" customClass="MiniPlayer" customModule="MiniPlayer">
-                                <rect key="frame" x="31" y="20" width="343" height="30"/>
+                                <rect key="frame" x="46" y="321" width="283" height="25"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="tBE-V1-YTM"/>
+                                    <constraint firstAttribute="height" constant="25" id="ZUr-Zn-FBe"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="activeTrackColor">
@@ -34,9 +34,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0Zv-dd-oO3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="0TS-ob-df9"/>
-                            <constraint firstItem="0Zv-dd-oO3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="2MJ-zb-Kde"/>
-                            <constraint firstItem="0Zv-dd-oO3" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" constant="15" id="lmg-wA-SXi"/>
+                            <constraint firstItem="0Zv-dd-oO3" firstAttribute="left" secondItem="kh9-bI-dsS" secondAttribute="leftMargin" constant="30" id="51P-IQ-q6L"/>
+                            <constraint firstItem="0Zv-dd-oO3" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="GXo-y7-Tao"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Zv-dd-oO3" secondAttribute="trailing" constant="30" id="hV5-tT-hvK"/>
                         </constraints>
                     </view>
                     <connections>

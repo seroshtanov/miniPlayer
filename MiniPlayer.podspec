@@ -8,36 +8,20 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MiniPlayer'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MiniPlayer.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '1.0.0'
+  s.summary          = "It's simple way to play music in your application"
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    Simple control for play music in application
                        DESC
 
-  s.homepage         = 'https://github.com/3422983@gmail.com/MiniPlayer'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/seroshtanov/miniPlayer'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '3422983@gmail.com' => '3422983@gmail.com' }
-  s.source           = { :git => 'https://github.com/3422983@gmail.com/MiniPlayer.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
+  s.author           = { "Vitaly Seroshtanov" => "v.s.seroshtanov@gmail.com" }
+  s.source           = { :git => 'https://github.com/seroshtanov/MiniPlayer.git', :tag => "#{s.version}" }
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'MiniPlayer/Classes/**/*'
-#  s.resources = 'Resources/*.{png}'
-#  s.resource_bundles = {
-#    'MiniPlayer' => ['MiniPlayer/Assets/MiniPlayer.xcassets']
-#  }
   s.resources = 'MiniPlayer/Assets/MiniPlayer.xcassets'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
