@@ -15,15 +15,15 @@ Just put UIView in your xib or storyboard and change class name on "MiniPlayer"
 
 ### For rule programmatically use :
 
-    <p>func play()<p/>
-    <p>func pause()<p/>
-    <p>func stop()<p/>
+    func play()
+    func pause()
+    func stop()
 
 ### Follow MiniPlayerDelegate:
 
-func didPlay(player: MiniPlayer)
-func didStop(player: MiniPlayer)
-func didPause(player: MiniPlayer)
+    func didPlay(player: MiniPlayer)
+    func didStop(player: MiniPlayer)
+    func didPause(player: MiniPlayer)
 
 #### To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
