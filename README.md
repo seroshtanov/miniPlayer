@@ -21,9 +21,9 @@ Just put UIView in your xib or storyboard and change class name on "MiniPlayer"
 
 ### Follow MiniPlayerDelegate:
 
-<p>func didPlay(player: MiniPlayer)<p/>
-<p>func didStop(player: MiniPlayer)<p/>
-<p>func didPause(player: MiniPlayer)<p/>
+func didPlay(player: MiniPlayer)
+func didStop(player: MiniPlayer)
+func didPause(player: MiniPlayer)
 
 #### To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
